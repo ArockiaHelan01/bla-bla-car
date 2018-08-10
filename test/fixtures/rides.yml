@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pickup: MyString
+  dropoff: MyString
+  departuredate: MyString
+  returndate: MyString
+  price: 1
+  seatsavailable: 1
+
+two:
+  pickup: MyString
+  dropoff: MyString
+  departuredate: MyString
+  returndate: MyString
+  price: 1
+  seatsavailable: 1

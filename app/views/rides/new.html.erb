@@ -1,0 +1,56 @@
+<% provide(:title, 'Offer Seats') %>
+
+<div class="rides-container">
+  <h3>Offer a ride on your next long journey</h3>
+  <%= form_for :ride, url: { action: "publish" } do |f| %>
+    <div id="ride-city-points">
+      <div class="block-head"> Pick-up and drop-off points </div>
+      <div class="block-content">
+          <div>
+            <div><span>Pick-up</span></div>
+            <%= f.text_field :pickup %> <br/>
+          </div>
+          <div>
+            <div><span>Drop-off</span></div>
+            <%= f.text_field :dropoff %> <br/>
+          </div>
+      </div>
+    </div>
+    <div id="date-and-time">
+      <div class="block-head">Date and time</div>
+      <div class="block-content">
+        <div>
+          <div><span>Departure date</span></div>
+          <%= f.text_field :departuredate %> <br/>
+        </div>
+        <div>
+          <div><span>Return date</span></div>
+          <%= f.text_field :returndate %> <br/>
+        </div>
+      </div>
+    </div>
+    <div id="ride-price">
+      <div class="block-head">Price per co-traveller</div>
+      <div class="block-content">
+        <div><span>Price</span></div>
+        <%= f.text_field :price %> <br/>
+      </div>
+    </div>
+    <div id="no-of-seats">
+      <div class="block-content">
+        <span>Seats Available</span>
+      </div>
+    </div>
+    <div id="back-seat-option">
+      <div class="block-head">Options</div>
+      <div class="block-content">
+        <span> Max. 2 in the back seats </span><br/>
+        <p class="u-grey""> Guarantee max. 2 people in the back of the car (preferred by co-travellers)</p>
+      </div>
+    </div>
+    <div id="terms">
+      <p> I have read and accept the <%= link_to "T&Cs", '#' %>, and certify that I am over 18 years old, hold a driving licence and have valid car insurance. </p>
+    </div>
+    <%= f.submit("Continue", :class => "button") %>
+  <% end -%>
+</div>

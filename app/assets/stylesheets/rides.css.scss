@@ -1,0 +1,63 @@
+// Place all the styles related to the rides controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.rides-container {
+  width: 550px;
+  margin: 15px auto;
+}
+
+.rides-container h3{
+  text-align: center;
+  margin: 0px 0px 20px;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+#ride-city-points, #date-and-time, #ride-price, #no-of-seats, #back-seat-option, #terms {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  width: 520px;
+  font-weight: normal;
+  background: #EDEDED;
+  box-sizing: border-box;
+}
+
+.block-head{
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  color: #054752;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.block-content {
+  padding: 11px 17px;
+}
+
+#back-seat-option span{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.rides-container span, #back-seat-option p{
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.block-content input{
+  width: 100%;
+  height: 28px;
+  margin: 10px 0px;
+}
+
+#terms{
+  font-size: 14px;
+  padding: 11px 17px;
+}
+
+.rides-container form .button{
+  width: 120px;
+}

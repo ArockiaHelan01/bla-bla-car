@@ -1,0 +1,19 @@
+<% provide(:title, 'Sign up') %>
+
+<div>
+  <h3>Join BlaBlaCar</h3>
+  <p>Create an account to personalize your <br>
+    your ride and more
+  </p>
+  <div>
+    <%= form_for @user , url: { action: "register" } do |f| -%>
+      FirstName : <%= f.text_field :firstname %> <br/>
+      LastName : <%= f.text_field :lastname %> <br/>
+      email : <%= f.text_field :email %> <br/>
+      phone-no : <%= f.text_field :phoneno %> <br/>
+      <%= f.submit %>
+    <% end -%>
+  </div>
+  <div><%= link_to "Sign up with facebook", '#' %></div>
+  <p>Already have an account? <%= link_to "Sign in", '/signin' %></p>
+</div>

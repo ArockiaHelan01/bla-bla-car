@@ -1,0 +1,21 @@
+<% provide(:title, 'Home') %>
+<div class="banner-container pos-rel">
+  <div class="pos-abs">
+    <h1>Emma. BlaBla. Mum.</h1>
+    <p>Carpooling takes the trekout of the journey.</p>
+    <div>
+      <%= form_tag("/", method: "post") do %>
+        <div>
+          <%= text_field_tag(:q, "", :placeholder => "Leaving from...") %>
+        </div>
+        <div>
+          <%= text_field_tag(:q, "", :placeholder => "Going to...") %>
+        </div>
+        <div>
+          <%= text_field_tag(:q, "", :placeholder => "Date") %>
+        </div>
+        <%= submit_tag("Find a ride", :class => "button") %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,22 @@
 BlaBlaCar::Application.routes.draw do
+  root :to => "welcome#index"
+
+  match "/home" => "welcome#index"
+
+  match "/signup" => "users#new"
+
+  match "/register" => "users#register"
+
+  match "/offerSeats" => "rides#new"
+
+  match "/publish" => "rides#publish"
+
+  # match "/signin" => "welcome#signin"
+
+
+
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
